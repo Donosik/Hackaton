@@ -7,7 +7,7 @@ require_once("functions/fragments.php");
 $restaurant=0;
 if (isset($_GET['restaurant']))
 {
-// nr. id restauracji
+// ID number of restaurant
     $restaurant = $_GET['restaurant'];
     headHTML($restaurant);
 }
@@ -22,7 +22,7 @@ HeaderDiv();
 ?>
 <div class="main">
     <div class="wallOutside">
-        <div class="wallInside">
+        <div class="wall">
             <div class="inside">
                 <?php
                 switch ($restaurant)

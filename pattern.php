@@ -12,7 +12,7 @@ HeaderDiv();
 ?>
 <div class="main">
     <div class="wallOutside">
-        <div class="wallInside">
+        <div class="wall">
             <div class="inside">
 
             </div>

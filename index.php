@@ -11,15 +11,13 @@ headHTML("Main Page");
 <?php
 HeaderDiv();
 ?>
-<div class="main">
-    <div class="wallOutside">
-        <div class="wallInside">
-            <div class="inside">
-                <?php
-                post("Damian", "5/5", "Ale smaczne! Polecam gorąco!");
-                ?>
-            </div>
-        </div>
+<div class="wall">
+    <div class="inside">
+        <?php
+        post("Damian", "Ale smaczne! Polecam gorąco!");
+        post("Damian", "Ale smaczne! Polecam gorąco!");
+        post("Damian", "Ale smaczne! Polecam gorąco!");
+        ?>
     </div>
 </div>
 <div class="hashTags">

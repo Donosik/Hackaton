@@ -22,12 +22,14 @@ function HeaderDiv()
 {
     echo '<div class="header">
     <div class="headerLeft">
-        <a href="index.php"><img src="img/pizza.png" height="50" width="50"></a>
+        <a href="index.php"><img src="img/pizza.png">
+        <p>Foodbook</p></a>
     </div>
     <div class="headerRight">
-        <a>Notifications</a>
-        <a style="text-decoration: none;" href="restaurants.php">Order Food</a>
-        <a>Account</a>
+        <a><img src="img/loupe.png"></a>
+        <a><img src="img/invite.png"></a>
+        <a href="restaurants.php"><img src="img/account.png"></a>
+        <a><img src="img/more.png"></a>
     </div>
 </div>';
 }
@@ -35,30 +37,52 @@ function HeaderDiv()
 function card($name, $description, $i)
 {
     echo '<div class="card">
-    <a href="restaurantPage.php?restaurant=' . $i . '"><img src="img/pizza.png" width="100 px" height="100 px"></a>
+    <a href="restaurantPage.php?restaurant=' . $i . '"><img src="img/pizza.png" width="100 px" height="100 px">
     <p id="restaurantName">';
     echo $name;
     echo '</p>
     <p>';
     echo $description;
-    echo '</p>
+    echo '</p></a>
 </div>';
 }
 
-function post($userName,$rating,$description)
+function post($userName, $description)
 {
     echo '<div class="post">
                     <img src="img/pizza.png">
                     <div class="icons">
-                        <img src="img/pizza.png">
+                    <div style="float: left;">
+                        <img src="img/pizza.png" onclick="counter(Like)">
+                        <span id="counter">0</span>
+                        </div>
+                        <div style="float: right;">
                         <img src="img/more.png">
                         <img src="img/invite.png">
                         <img src="img/home.png">
                         <img src="img/share.png">
+                        </div>
                     </div>
-                    <span>'.$userName.'</span>
-                    <span>'.$rating.'</span>
-                    <p>'.$description.'
-                    </p>
-                </div>';
+                    <hr style="background: #d91e36; height: 1px;">
+                    <p>Name: ' . $userName . '</p>
+                    <p>Description: ' . $description . '</p>
+                </div>
+                <script>
+                Like=false;
+                function counter(isLiked)
+                {
+                    if(isLiked==false)
+                    {
+                        document.getElementById("counter").innerHTML++;
+                        Like=!Like;
+                        console.log("Odejmuje");
+                    }
+                    else if(isLiked==true)
+                    {
+                        document.getElementById("counter").innerHTML--;
+                        Like=!Like;
+                        console.log("Dodaje");
+                    }
+                }
+</script>';
 }

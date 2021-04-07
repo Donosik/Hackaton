@@ -1,5 +1,4 @@
-.post
-{
+.post {
     border: black;
     border-style: solid;
     margin: auto;
@@ -8,12 +7,26 @@
     padding: 10px;
     max-width: 400px;
 }
-.icons
-{
+
+.post img {
+    width: 300px;
+    height: 300px;
+}
+
+.post span {
+    color: #d91e36;
+    font-size: 30px;
+}
+
+.icons {
     height: 40px;
 }
-.icons img
-{
+
+.icons img {
     width: 40px;
     height: 40px;
+}
+
+.post p {
+    text-align: left;
 }
