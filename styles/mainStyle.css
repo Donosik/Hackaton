@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+    background-color: #3E3C3D;
+}
+
+/* Header */
+.header {
+    overflow: hidden;
+    font-weight: bold;
+    color: #d91e36;
+    padding: 10px;
+    height: 50px;
+    background-color: #F2AF29;
+    font-size: 25px;
+}
+
+.headerLeft {
+    float: left;
+}
+
+.headerLeft a {
+    float: left;
+}
+
+.headerRight {
+    top: 50%;
+    margin: 10px;
+    float: right;
+}
+
+.headerRight a {
+    text-decoration: none;
+    color: #d91e36;
+    padding: 10px;
+}
+
+/* Main Divs */
+.main {
+
+}
+
+.wallOutside {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+.wallInside {
+    overflow: hidden;
+    background-color: #E0E0CE;
+    width: 600px;
+    height: calc(100vh - 70px);
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hashTags {
+    overflow: hidden;
+    float: right;
+    background-color: blue;
+    width: 200px;
+    height: calc(100vh - 70px);
+    margin: 0px;
+}
+
+.inside {
+    overflow: auto;
+    margin-right: -100px;
+    padding-right: 100px;
+    height: inherit;
+    text-align: center;
+}
