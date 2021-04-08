@@ -17,9 +17,8 @@ HeaderDiv();
             <div class="inside">
                 <div class="search">
                     <form action="restaurants.php" method="get">
-                        <input type="text" name="searchEngine" style="width: 200px;"
+                        <input type="text" name="searchEngine" style="width: 300px;font-size: 26px;"
                                placeholder="what do u want to eat?">
-                        <input type="submit" value="Search">
                     </form>
                 </div>
                 <?php
@@ -59,7 +58,7 @@ HeaderDiv();
                         }
                         else
                         {
-                            for ($j = 0;$j<sizeof($restaurants[$i][3]);$j++)
+                            for ($j = 0; $j < sizeof($restaurants[$i][3]); $j++)
                             {
                                 if (strpos($restaurants[$i][3][$j], $_GET['searchEngine']) !== false)
                                 {

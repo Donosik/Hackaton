@@ -52,7 +52,11 @@ body {
 }
 .headerRight input
 {
-
+    visibility: hidden;
+    float: right;
+    margin-right: -40px;
+    margin-top: 5px;
+    font-size: 24px;
 }
 
 .headerRight img {
@@ -75,10 +79,12 @@ body {
 .hashTags {
     overflow: hidden;
     float: right;
-    background-color: blue;
+    background-color: #d91e36;
     width: 300px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 110px);
     margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .inside {
@@ -94,4 +100,7 @@ body {
     color: black;
     font-size: 20px;
     background-color: white;
+    margin: 10px;
+    padding: 5px;
+    padding-right: 20px;
 }
