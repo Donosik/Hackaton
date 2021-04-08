@@ -33,7 +33,7 @@ HeaderDiv();
                         {
                             ?>
                             <h1>Przystawki</h1>
-                            <hr style="height: 5px; background: #3E3C3D ">
+                            <hr style="height: 5px; background: #3E3C3D; width: 750px">
                         <?php
                         $allstarters = 2;
                         for ($i = 1; $i <= $allstarters; $i++)
