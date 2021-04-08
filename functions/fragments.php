@@ -102,8 +102,10 @@ function post($userName, $description)
 function cardre($name, $description, $i)
 {
     echo '<div class="cardre">
-    <a id="dishName1"><img src="img/pizza.png" width="100 px" height="100 px"><img src="img/plus2.png" width="50 px" height="50 px" style="float: right" style="margin-top: 30px">
-    <p id="dishName">';
+    
+    <a id="dishName1"><img src="img/pizza.png" width="100 px" height="100 px">
+    <p id="dishName">
+    <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">';
     echo $name;
     echo '</p>
     <p>';

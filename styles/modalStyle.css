@@ -11,6 +11,7 @@
     background-color: rgba(0,0,0,0.4);
     margin-left: -150px;
     padding-right: 150px;
+
 }
 .modal-content {
     background-color: #fefefe;
@@ -18,6 +19,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 25%;
+    border-radius: 20px;
 }
 .close {
     color: #aaa;
