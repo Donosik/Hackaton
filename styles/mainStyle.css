@@ -23,12 +23,13 @@ body {
 }
 
 .headerLeft p {
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     color: #d91e36;
     float: left;
     margin: 10px;
     margin-left: 20px;
+    font-family: 'Comfortaa', cursive;
 }
 
 .headerLeft img {
