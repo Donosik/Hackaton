@@ -1,6 +1,7 @@
 .cardre { /* card of restaurant */
     width: 400px;
     height: 100px;
+    background: white;
     border: black;
     border-style: solid;
     padding: 10px;
