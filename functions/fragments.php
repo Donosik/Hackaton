@@ -85,7 +85,7 @@ function cardre($i, $name, $description, $img)
 {
     echo '<div class="cardre">
     
-    <a id="dishName1"><img src="img/' . $img . '" onclick="Damian();" width="100 px" height="100 px">
+    <a id="dishName1"><img src="img/' . $img . '" onclick="show();" width="100 px" height="100 px">
     <p id="dishName">
     <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">';
     echo $name;
