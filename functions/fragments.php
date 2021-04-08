@@ -26,11 +26,17 @@ function HeaderDiv()
         <p>Foodbook</p></a>
     </div>
     <div class="headerRight">
-        <a><img src="img/loupe.png"></a>
+        <a><input id="inputField" style="visibility: hidden;"></a>
+        <a><img src="img/loupe.png" onclick="show()"></a>
         <a><img src="img/invite.png"></a>
         <a href="restaurants.php"><img src="img/account.png"></a>
         <a><img src="img/more.png"></a>
     </div>
+    <script>
+    function show(){
+    document.getElementById("inputField").style.visibility="visible";
+    }
+    </script>
 </div>';
 }
 
@@ -98,5 +104,17 @@ function cardre($name, $description, $i)
     <p>';
     echo $description;
     echo '</p></a>
+</div>';
+}
+
+function hastagsDiv()
+{
+    echo '<div class="hashTags">
+    <div class="inside">
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Ryba">#Ryba</a>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Sushi">#Sushi</a>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Mięso">#Mięso</a>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Hajs">#Hajs</a>
+    </div>
 </div>';
 }

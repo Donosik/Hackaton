@@ -73,11 +73,9 @@ HeaderDiv();
             </div>
         </div>
     </div>
-    <div class="hashTags">
-        <div class="inside">
-
-        </div>
-    </div>
+    <?php
+    hastagsDiv();
+    ?>
 </div>
 </body>
 </html>
