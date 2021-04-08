@@ -1,0 +1,12 @@
+id : 1
+likes : 0
+imgname : pizza
+username : Damian
+description : dasdasdas
+restaurantid : 2
+id : 2
+likes : 3
+imgname : fff
+username : dasds
+description : aaa
+restaurantid : 4

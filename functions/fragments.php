@@ -58,14 +58,14 @@ function card($name, $description, $i)
 </div>';
 }
 
-function post($userName, $description)
+function post($userName, $description,$likes)
 {
     echo '<div class="post">
                     <img src="img/pizza.png">
                     <div class="icons">
                     <div style="float: left;">
                         <img src="img/pizza.png" onclick="counter()">
-                        <span id="counter">0</span>
+                        <span id="counter">'.$likes.'</span>
                         </div>
                         <div style="float: right;">
                         <img src="img/more.png">

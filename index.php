@@ -15,6 +15,26 @@ HeaderDiv();
 <div class="wall">
     <div class="inside">
         <?php
+        $myFile="posts.txt";
+        $lines=file($myFile);
+        $i=0;
+        $j=0;
+        foreach ($lines as $line)
+        {
+            $var = explode(':', $line, 2);
+            $arr[$var[0]] = $var[1];
+            $i++;
+            if($i==6)
+            {
+                $i=0;
+                $posts[$j]=$arr;
+                $j++;
+            }
+        }
+
+        print_r($posts[1]);
+
+
         post("Damian", "Ale smaczne! Polecam gorąco!");
         post("Damian", "Ale smaczne! Polecam gorąco!");
         post("Damian", "Ale smaczne! Polecam gorąco!");
