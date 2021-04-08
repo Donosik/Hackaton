@@ -14,7 +14,6 @@ HeaderDiv();
     <div class="wallOutside">
         <div class="wall">
             <div class="inside">
-
             </div>
         </div>
     </div>

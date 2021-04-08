@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("functions/fragments.php");
 ?>
 <!DOCTYPE html>
@@ -15,7 +16,13 @@ HeaderDiv();
     <div class="inside">
         <h1>Basket</h1>
         <hr style="background-color: #d91e36; height: 2px;"/>
-        <p>Twoje zamówienie:</p>
+        <h2>Your order:</h2>
+        <?php
+        if (isset($_SESSION['order']))
+        {
+            print_r($_SESSION['order']);
+        }
+        ?>
     </div>
 </div>
 <?php
