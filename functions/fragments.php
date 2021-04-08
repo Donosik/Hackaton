@@ -116,12 +116,21 @@ function hastagsDiv()
         <a href="restaurants.php?searchEngine=%23sushi">#sushi</a>
         <a href="restaurants.php?searchEngine=%23meat">#meat</a>
         <a href="restaurants.php?searchEngine=%23cash">#cash</a>
-        <a href="restaurants.php?searchEngine=%23fish">#vegetarian</a>
-        <a href="restaurants.php?searchEngine=%23sushi">#chinese</a>
-        <a href="restaurants.php?searchEngine=%23fish">#italian</a>
-        <a href="restaurants.php?searchEngine=%23sushi">#pizza</a>
-        <a href="restaurants.php?searchEngine=%23fish">#soup</a>
-        <a href="restaurants.php?searchEngine=%23sushi">#pancakes</a>
+        <a href="restaurants.php?searchEngine=%23vegetarian">#vegetarian</a>
+        <a href="restaurants.php?searchEngine=%23chinese">#chinese</a>
+        <a href="restaurants.php?searchEngine=%23italian">#italian</a>
+        <a href="restaurants.php?searchEngine=%23pizza">#pizza</a>
+        <a href="restaurants.php?searchEngine=%23top10">#top10</a>
+        <a href="restaurants.php?searchEngine=%23soup">#soup</a>
+        <a href="restaurants.php?searchEngine=%23pancakes">#pancakes</a>
+        <a href="restaurants.php?searchEngine=%23discount">#discount</a>
+        <a href="restaurants.php?searchEngine=%23coffe">#coffe</a>
+        <a href="restaurants.php?searchEngine=%23wine&beer">#wine&beer</a>
+        <a href="restaurants.php?searchEngine=%23casual">#casual</a>
+        <a href="restaurants.php?searchEngine=%23fancy">#fancy</a>
+        <a href="restaurants.php?searchEngine=%23pets_allowed">#pets_allowed</a>
+        <a href="restaurants.php?searchEngine=%23mexican">#mexican</a>
+        <a href="restaurants.php?searchEngine=%23cosy">#cosy</a>
     </div>
 </div>';
 }

@@ -25,7 +25,7 @@ HeaderDiv();
 
                 $restaurants = array(
                     array("Łosoś", "DASD", 1,
-                        array("#sushi")),
+                        array("#sushi", "#fish", "#chinese")),
                     array("Ryba", "Opis", 2,
                         array("#sushi")),
                     array("Damian", "Opis", 3,
