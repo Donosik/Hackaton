@@ -59,7 +59,7 @@ body {
 /* Main Divs */
 .wall {
     float: left;
-    width: calc(100% - 200px);
+    width: calc(100% - 300px);
     overflow: hidden;
     background-color: #E0E0CE;
     height: calc(100vh - 70px);
@@ -72,7 +72,7 @@ body {
     overflow: hidden;
     float: right;
     background-color: blue;
-    width: 400px;
+    width: 300px;
     height: calc(100vh - 70px);
     margin: 0px;
 }
