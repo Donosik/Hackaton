@@ -58,10 +58,10 @@ function card($name, $description, $i)
 </div>';
 }
 
-function post($userName, $description,$likes)
+function post($id, $likes, $imgname, $username, $description, $restaurantid)
 {
     echo '<div class="post">
-                    <img src="img/pizza.png">
+                    <img src="img/'.$imgname.'">
                     <div class="icons">
                     <div style="float: left;">
                         <img src="img/pizza.png" onclick="counter()">
@@ -75,7 +75,7 @@ function post($userName, $description,$likes)
                         </div>
                     </div>
                     <hr style="background: #d91e36; height: 1px;">
-                    <p>Name: ' . $userName . '</p>
+                    <p>Name: ' . $username . '</p>
                     <p>Description: ' . $description . '</p>
                 <script>
                 //TODO: Giving Like is only working for first post, need to be repaired!
