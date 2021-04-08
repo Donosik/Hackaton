@@ -102,6 +102,23 @@ body {
     background-color: white;
     margin: 10px;
     padding: 5px;
+}
+
+.Tag {
+    overflow: auto;
+    margin-right: -100px;
+    padding-right: 100px;
+    height: inherit;
+    text-align: center;
+}
+.Tag a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #F2AF29;
+    margin: 10px;
+    padding: 5px;
     border-radius: 10px;
     line-height: 40px;
 }

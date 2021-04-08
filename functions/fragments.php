@@ -111,7 +111,7 @@ function cardre($name, $description, $i)
 function hastagsDiv()
 {
     echo '<div class="hashTags">
-    <div class="inside">
+    <div class="Tag">
         <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23fish">#fish</a>
         <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23sushi">#sushi</a>
         <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23meat">#meat</a>
