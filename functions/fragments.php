@@ -112,10 +112,10 @@ function hastagsDiv()
 {
     echo '<div class="hashTags">
     <div class="inside">
-        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Ryba">#Ryba</a>
-        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Sushi">#Sushi</a><br/><br/>
-        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Mięso">#Mięso</a>
-        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Hajs">#Hajs</a><br/><br/>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23fish">#fish</a>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23sushi">#sushi</a><br/><br/>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23meat">#meat</a>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23cash">#cash</a><br/><br/>
     </div>
 </div>';
 }

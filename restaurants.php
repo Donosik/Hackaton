@@ -25,15 +25,15 @@ HeaderDiv();
 
                 $restaurants = array(
                     array("Łosoś", "DASD", 1,
-                        array("#Sushi")),
+                        array("#sushi")),
                     array("Ryba", "Opis", 2,
-                        array("#Sushi")),
+                        array("#sushi")),
                     array("Damian", "Opis", 3,
-                        array("#Sushi", "#Ryba")),
+                        array("#sushi", "#fish")),
                     array("Restauracja", "Opis", 4,
-                        array("#Mięso")),
+                        array("#meat")),
                     array("Dąb", "Opis", 5,
-                        array("#Hajs")),
+                        array("#cash")),
                 );
                 // Number of all Restaurants
                 $allRestaurants = 5;
