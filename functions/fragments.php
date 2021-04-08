@@ -130,9 +130,10 @@ function hastagsDiv()
         <a href="restaurants.php?searchEngine=%23wine&beer">#wine&beer</a>
         <a href="restaurants.php?searchEngine=%23casual">#casual</a>
         <a href="restaurants.php?searchEngine=%23fancy">#fancy</a>
-        <a href="restaurants.php?searchEngine=%23pets_allowed">#pets_allowed</a>
         <a href="restaurants.php?searchEngine=%23mexican">#mexican</a>
         <a href="restaurants.php?searchEngine=%23cosy">#cosy</a>
+        <a href="restaurants.php?searchEngine=%23hamburgers">#hamburgers</a>
+        <a href="restaurants.php?searchEngine=%23polish">#polish</a>
     </div>
 </div>';
 }
