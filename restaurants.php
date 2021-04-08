@@ -24,46 +24,73 @@ HeaderDiv();
                 </div>
                 <?php
 
-                $restaurants = array(
-                    array("Łosoś", "DASD", 1,
-                        array("#sushi", "#fish", "#chinese")),
-                    array("Ryba", "Opis", 2,
-                        array("#sushi")),
-                    array("Damian", "Opis", 3,
-                        array("#sushi", "#fish")),
-                    array("Restauracja", "Opis", 4,
-                        array("#meat", "#discount", "#italian", "#chinese")),
-                    array("Dąb", "Opis", 5,
-                        array("#cash", "#top10", "#wine&bear")),
-                );
-                // Number of all Restaurants
-                $allRestaurants = 5;
+                $myFile="restaurants.txt";
+                $lines=file($myFile);
+                $a=0;
+                $b=0;
+                foreach ($lines as $line)
+                {
+                    $var=explode(':',$line,2);
+                    $arr[$a]=$var[1];
+                    if($a==4)
+                    {
+                        $x=explode(';',$var[1]);
+                        print_r($x);
+                        for($k=0;$k<sizeof($x);$k++)
+                        {
+                            $c[$k]=$x[$k];
+                        }
+                        $arr[$a]=$c;
+                    }
+                    $a++;
+                    if($a==5)
+                    {
+                        $a=0;
+                        $restaurants[$b]=$arr;
+                        $b++;
+                    }
+                }
+
+                print_r($restaurants[0][4]);
+                echo '<br/>';
+                echo '<br/>';
+                print_r($restaurants[0][4]);
+                echo '<br/>';
+                echo '<br/>';
+                print_r($restaurants[0][4]);
+                echo '<br/>';
+                echo '<br/>';
+                print_r($restaurants[0][4]);
                 if (!(isset($_GET['searchEngine'])) || ($_GET['searchEngine'] == ""))
                 {
-                    for ($i = 1; $i <= $allRestaurants; $i++)
+                    for ($i = 0; $i < sizeof($restaurants); $i++)
                     {
-                        card($restaurants[$i - 1][0], $restaurants[$i - 1][1], $restaurants[$i - 1][2]);
+                        card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2], $restaurants[$i][3],
+                            $restaurants[$i][4]);
                     }
                 }
                 else
                 {
-                    for ($i = 0; $i < $allRestaurants; $i++)
+                    for ($i = 0; $i < sizeof($restaurants); $i++)
                     {
-                        if (strpos($restaurants[$i][0], $_GET['searchEngine']) !== false)
+                        if (strpos($restaurants[$i][1], $_GET['searchEngine']) !== false)
                         {
-                            card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2]);
+                            card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2], $restaurants[$i][3],
+                                $restaurants[$i][4]);
                         }
-                        else if (strpos($restaurants[$i][1], $_GET['searchEngine']) !== false)
+                        else if (strpos($restaurants[$i][2], $_GET['searchEngine']) !== false)
                         {
-                            card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2]);
+                            card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2], $restaurants[$i][3],
+                                $restaurants[$i][4]);
                         }
                         else
                         {
-                            for ($j = 0; $j < sizeof($restaurants[$i][3]); $j++)
+                            for ($j = 0; $j < sizeof($restaurants[$i][4]); $j++)
                             {
-                                if (strpos($restaurants[$i][3][$j], $_GET['searchEngine']) !== false)
+                                if (strpos($restaurants[$i][4][$j], $_GET['searchEngine']) !== false)
                                 {
-                                    card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2]);
+                                    card($restaurants[$i][0], $restaurants[$i][1], $restaurants[$i][2], $restaurants[$i][3],
+                                        $restaurants[$i][4]);
                                 }
                             }
                         }

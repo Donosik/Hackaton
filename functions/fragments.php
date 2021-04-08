@@ -45,10 +45,10 @@ function HeaderDiv()
 </div>';
 }
 
-function card($name, $description, $i)
+function card($id, $name, $description,$img,$hashtags)
 {
     echo '<div class="card">
-    <a href="restaurantPage.php?restaurant=' . $i . '"><img src="img/pizza.png" width="100 px" height="100 px">
+    <a href="restaurantPage.php?restaurant=' . $id . '"><img src="img/'.$img.'" width="100 px" height="100 px">
     <p id="restaurantName">';
     echo $name;
     echo '</p>
