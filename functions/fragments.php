@@ -53,7 +53,7 @@ function post($userName, $description)
                     <img src="img/pizza.png">
                     <div class="icons">
                     <div style="float: left;">
-                        <img src="img/pizza.png" onclick="counter(Like)">
+                        <img src="img/pizza.png" onclick="counter()">
                         <span id="counter">0</span>
                         </div>
                         <div style="float: right;">
@@ -66,23 +66,36 @@ function post($userName, $description)
                     <hr style="background: #d91e36; height: 1px;">
                     <p>Name: ' . $userName . '</p>
                     <p>Description: ' . $description . '</p>
-                </div>
                 <script>
-                Like=false;
-                function counter(isLiked)
+                let like=false;
+                function counter()
                 {
-                    if(isLiked==false)
+                    if(like==false)
                     {
                         document.getElementById("counter").innerHTML++;
-                        Like=!Like;
+                        like=!like;
                         console.log("Odejmuje");
                     }
-                    else if(isLiked==true)
+                    else if(like==true)
                     {
                         document.getElementById("counter").innerHTML--;
-                        Like=!Like;
+                        like=!like;
                         console.log("Dodaje");
                     }
-                }
-</script>';
+                };
+</script>
+</div>';
+}
+
+function cardre($name, $description, $i)
+{
+    echo '<div class="cardre">
+    <a id="dishName1"><img src="img/pizza.png" width="100 px" height="100 px">
+    <p id="dishName">';
+    echo $name;
+    echo '</p>
+    <p>';
+    echo $description;
+    echo '</p></a>
+</div>';
 }

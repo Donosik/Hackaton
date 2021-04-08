@@ -4,7 +4,7 @@ require_once("functions/fragments.php");
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$restaurant=0;
+$restaurant = 0;
 if (isset($_GET['restaurant']))
 {
 // ID number of restaurant
@@ -16,6 +16,8 @@ else
     headHTML();
 }
 ?>
+<link href="styles/cardreStyle.css" rel="stylesheet" type="text/css">
+<link href="styles/modalStyle.css" rel="stylesheet" type="text/css">
 <body>
 <?php
 HeaderDiv();
@@ -29,7 +31,40 @@ HeaderDiv();
                 {
                     case 1:
                         {
-                            echo "1 Strona restauracji $restaurant";
+                            ?>
+                            <h1>Przystawki</h1>
+                            <hr style="height: 5px; background: #3E3C3D ">
+                        <?php
+                        $allstarters = 2;
+                        for ($i = 1; $i <= $allstarters; $i++)
+                        {
+                            cardre("Przystawka", "Opis", $i);
+                        } ?>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h1>Przystawka</h1>
+                                    <h3>Podstawowe składniki</h3>
+                                    <p>Opis</p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal = document.getElementById("myModal");
+                                var btn = document.getElementById("dishName1");
+                                var span = document.getElementsByClassName("close")[0];
+                                btn.onclick = function () {
+                                    modal.style.display = "block";
+                                }
+                                span.onclick = function () {
+                                    modal.style.display = "none";
+                                }
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                            <?php
                         }
                         break;
                     case 2:
@@ -50,31 +85,6 @@ HeaderDiv();
                     case 5:
                         {
                             echo "5 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 6:
-                        {
-                            echo "6 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 7:
-                        {
-                            echo "7 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 8:
-                        {
-                            echo "S8 trona restauracji $restaurant";
-                        }
-                        break;
-                    case 9:
-                        {
-                            echo "9 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 10:
-                        {
-                            echo "10 Strona restauracji $restaurant";
                         }
                         break;
                     default:
