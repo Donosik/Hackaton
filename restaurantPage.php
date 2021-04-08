@@ -44,8 +44,10 @@ HeaderDiv();
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
                                     <h1>Przystawka</h1>
+
                                     <h3>Podstawowe składniki</h3>
                                     <p>Opis</p>
+                                    <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">
                                 </div>
                             </div>
                             <script>
