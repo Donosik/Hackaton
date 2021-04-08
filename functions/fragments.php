@@ -45,10 +45,10 @@ function HeaderDiv()
 </div>';
 }
 
-function card($id, $name, $description,$img,$hashtags)
+function card($id, $name, $description, $img, $hashtags)
 {
     echo '<div class="card">
-    <a href="restaurantPage.php?restaurant=' . $id . '"><img src="img/'.$img.'" width="100 px" height="100 px">
+    <a href="restaurantPage.php?restaurant=' . $id . '"><img src="img/' . $img . '" width="100 px" height="100 px">
     <p id="restaurantName">';
     echo $name;
     echo '</p>
@@ -61,12 +61,12 @@ function card($id, $name, $description,$img,$hashtags)
 function post($id, $likes, $imgname, $username, $description, $restaurantid)
 {
     echo '<div class="post">
-                    <img src="pic/'.$imgname.'">
+                    <img src="pic/' . $imgname . '">
                     <div class="icons">
                     <div style="float: left;">
-                        <img src="img/pizza.png" onclick="counter('.$id.')">
-                        <span id="counter'.$id.'">'.$likes.'</span>
-                        <span id="bool '.$id.'" style="visibility: hidden">0</span>
+                        <img src="img/pizza.png" onclick="counter(' . $id . ')">
+                        <span id="counter' . $id . '">' . $likes . '</span>
+                        <span id="bool ' . $id . '" style="visibility: hidden">0</span>
                         </div>
                         <div style="float: right;">
                         <img src="img/more.png">
@@ -81,11 +81,11 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
 </div>';
 }
 
-function cardre($i,$name, $description,$img)
+function cardre($i, $name, $description, $img)
 {
     echo '<div class="cardre">
     
-    <a id="dishName1"><img src="img/'.$img.'" width="100 px" height="100 px">
+    <a id="dishName1"><img src="img/' . $img . '" onclick="Damian();" width="100 px" height="100 px">
     <p id="dishName">
     <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">';
     echo $name;

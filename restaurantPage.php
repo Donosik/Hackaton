@@ -36,32 +36,31 @@ HeaderDiv();
                             <h1>Przystawki</h1>
                             <hr style="height: 5px; background: #3E3C3D; width: 750px">
                         <?php
-                        $myFile="menu/menu".$restaurant.".txt";
-                        $lines=file($myFile);
-                        $i=0;
-                        $j=0;
+                        $myFile = "menu/menu" . $restaurant . ".txt";
+                        $lines = file($myFile);
+                        $i = 0;
+                        $j = 0;
                         foreach ($lines as $line)
                         {
-                            $var=explode(':',$line,2);
-                            $arr[$i]=$var[1];
+                            $var = explode(':', $line, 2);
+                            $arr[$i] = $var[1];
                             $i++;
-                            if($i==5)
+                            if ($i == 5)
                             {
-                                $i=0;
-                                $menus[$j]=$arr;
+                                $i = 0;
+                                $menus[$j] = $arr;
                                 $j++;
                             }
                         }
 
                         foreach ($menus as $menu)
                         {
-                            cardre($menu[0],$menu[1],$menu[2],$menu[3]);
+                            cardre($menu[0], $menu[1], $menu[2], $menu[3]);
                         } ?>
                             <div id="myModal" class="modal">
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
                                     <h1>Przystawka</h1>
-
                                     <h3>Podstawowe składniki</h3>
                                     <p>Opis</p>
                                     <img src="img/plus.png" width="40 px" height="40 px" style="float: right">
@@ -69,11 +68,11 @@ HeaderDiv();
                             </div>
                             <script>
                                 var modal = document.getElementById("myModal");
-                                var btn = document.getElementById("dishName1");
                                 var span = document.getElementsByClassName("close")[0];
-                                btn.onclick = function () {
+
+                                function Damian() {
                                     modal.style.display = "block";
-                                }
+                                };
                                 span.onclick = function () {
                                     modal.style.display = "none";
                                 }
