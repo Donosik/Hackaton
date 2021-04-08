@@ -1,12 +1,12 @@
 id:1
 likes:0
-imgname:pizza.png
+imgname:burgerek.png
 username:Damian
 description:dasdasdas dsadasdas dasdasdas dasdasd fdsjakfdsjdkhfsdjkf hsdfjkfhjskdfh  hdfjshsdfjksdh hjdfhsdjk hjdfshsjdk  hjdsfhsjd hjsdfhjsdh hjdfhjsdf hjsdfhsdjf hjsdfhsdjff
 restaurantid:2
 id:2
 likes:3
-imgname:home.png
+imgname:placuszki.png
 username:dasds
 description:aaa
 restaurantid:4

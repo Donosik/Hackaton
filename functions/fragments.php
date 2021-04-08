@@ -61,7 +61,7 @@ function card($name, $description, $i)
 function post($id, $likes, $imgname, $username, $description, $restaurantid)
 {
     echo '<div class="post">
-                    <img src="img/'.$imgname.'">
+                    <img src="pic/'.$imgname.'">
                     <div class="icons">
                     <div style="float: left;">
                         <img src="img/pizza.png" onclick="counter('.$id.')">
