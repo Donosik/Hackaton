@@ -1,0 +1,10 @@
+id:1
+name:Przystawka
+description:Opis
+imgname:pizza.png
+price:20
+id:2
+name:Danie Główne
+description:Opis2
+imgname:plus.png
+price:30

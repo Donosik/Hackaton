@@ -36,10 +36,26 @@ HeaderDiv();
                             <h1>Przystawki</h1>
                             <hr style="height: 5px; background: #3E3C3D; width: 750px">
                         <?php
-                        $allstarters = 2;
-                        for ($i = 1; $i <= $allstarters; $i++)
+                        $myFile="menu/menu".$restaurant.".txt";
+                        $lines=file($myFile);
+                        $i=0;
+                        $j=0;
+                        foreach ($lines as $line)
                         {
-                            cardre("Przystawka", "Opis", $i);
+                            $var=explode(':',$line,2);
+                            $arr[$i]=$var[1];
+                            $i++;
+                            if($i==5)
+                            {
+                                $i=0;
+                                $menus[$j]=$arr;
+                                $j++;
+                            }
+                        }
+
+                        foreach ($menus as $menu)
+                        {
+                            cardre($menu[0],$menu[1],$menu[2],$menu[3],$menu[4]);
                         } ?>
                             <div id="myModal" class="modal">
                                 <div class="modal-content">

@@ -81,11 +81,11 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
 </div>';
 }
 
-function cardre($name, $description, $i)
+function cardre($i,$name, $description,$img)
 {
     echo '<div class="cardre">
     
-    <a id="dishName1"><img src="img/pizza.png" width="100 px" height="100 px">
+    <a id="dishName1"><img src="img/'.$img.'" width="100 px" height="100 px">
     <p id="dishName">
     <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">';
     echo $name;
