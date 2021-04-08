@@ -28,6 +28,7 @@ function HeaderDiv()
     <div class="headerRight">
         <a><form action="restaurants.php" method="get"><input id="inputField" name="searchEngine"></form></a>
         <a><img src="img/loupe.png" onclick="show()"></a>
+        <a><img src="img/home.png"></a>
         <a><img src="img/plus.png"></a>
         <a href="restaurants.php"><img src="img/invite.png"></a>
         <a><img src="img/account.png"></a>
