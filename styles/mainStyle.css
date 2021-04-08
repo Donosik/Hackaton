@@ -56,8 +56,9 @@ body {
     visibility: hidden;
     float: right;
     margin-right: -40px;
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 24px;
+    border-radius: 25px;
 }
 
 .headerRight img {
