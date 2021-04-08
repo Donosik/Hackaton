@@ -17,7 +17,7 @@ HeaderDiv();
             <div class="inside">
                 <div class="search">
                     <form action="restaurants.php" method="get">
-                        <input type="text" name="searchEngine" style="width: 400px;font-size: 26px; font-family: 'Comfortaa', cursive; border-radius: 20px;"
+                        <input type="text" name="searchEngine" style="width: 300px;font-size: 20px; font-family: 'Comfortaa', cursive; border-radius: 20px; padding-left: 10px;"
                                placeholder="what do you want to eat?">
                     </form>
                 </div>
