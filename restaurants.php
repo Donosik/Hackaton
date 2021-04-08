@@ -31,9 +31,9 @@ HeaderDiv();
                     array("Damian", "Opis", 3,
                         array("#sushi", "#fish")),
                     array("Restauracja", "Opis", 4,
-                        array("#meat")),
+                        array("#meat", "#discount", "#italian", "#chinese")),
                     array("Dąb", "Opis", 5,
-                        array("#cash")),
+                        array("#cash", "#top10", "#wine&bear")),
                 );
                 // Number of all Restaurants
                 $allRestaurants = 5;

@@ -30,6 +30,7 @@ function HeaderDiv()
         <a><img src="img/loupe.png" onclick="show()"></a>
         <a><img src="img/home.png"></a>
         <a><img src="img/plus.png"></a>
+        <a href="basket.php"><img src="img/basket.png"></a>
         <a href="restaurants.php"><img src="img/invite.png"></a>
         <a><img src="img/account.png"></a>
         <a><img src="img/more.png"></a>
