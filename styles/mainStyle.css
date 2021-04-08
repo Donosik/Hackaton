@@ -87,6 +87,28 @@ body {
     padding-bottom: 20px;
 }
 
+.Tag {
+    overflow: auto;
+    margin-right: -100px;
+    padding-right: 110px;
+    padding-left: 10px;
+    height: inherit;
+    text-align: center;
+}
+
+.Tag a
+{
+    font-family: 'Courier New', monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #F2AF29;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 40px;
+}
+
 .inside {
     overflow: auto;
     margin-right: -100px;
@@ -104,21 +126,4 @@ body {
     padding: 5px;
 }
 
-.Tag {
-    overflow: auto;
-    margin-right: -100px;
-    padding-right: 100px;
-    height: inherit;
-    text-align: center;
-}
-.Tag a
-{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    background-color: #F2AF29;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    line-height: 40px;
-}
+
