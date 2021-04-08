@@ -1,7 +1,6 @@
 <?php
 /**
  * @param string $name Argument to show how HTML <title> should look like
- * skdaosdkpasokdpasos
  */
 function headHTML($name = "")
 {
@@ -114,7 +113,7 @@ function hastagsDiv()
     echo '<div class="hashTags">
     <div class="inside">
         <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Ryba">#Ryba</a>
-        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Sushi">#Sushi</a><br/><br/>
+        <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Sushi">#Sushi</a>z
         <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Mięso">#Mięso</a>
         <a href="http://localhost/Hackaton/restaurants.php?searchEngine=%23Hajs">#Hajs</a><br/><br/>
     </div>
