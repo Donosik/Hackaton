@@ -35,12 +35,14 @@ HeaderDiv();
                     if($a==4)
                     {
                         $x=explode(';',$var[1]);
-                        print_r($x);
+
                         for($k=0;$k<sizeof($x);$k++)
                         {
                             $c[$k]=$x[$k];
                         }
                         $arr[$a]=$c;
+                        $c=null;
+
                     }
                     $a++;
                     if($a==5)
@@ -50,17 +52,6 @@ HeaderDiv();
                         $b++;
                     }
                 }
-
-                print_r($restaurants[0][4]);
-                echo '<br/>';
-                echo '<br/>';
-                print_r($restaurants[0][4]);
-                echo '<br/>';
-                echo '<br/>';
-                print_r($restaurants[0][4]);
-                echo '<br/>';
-                echo '<br/>';
-                print_r($restaurants[0][4]);
                 if (!(isset($_GET['searchEngine'])) || ($_GET['searchEngine'] == ""))
                 {
                     for ($i = 0; $i < sizeof($restaurants); $i++)

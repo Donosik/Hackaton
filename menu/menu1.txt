@@ -8,3 +8,8 @@ name:Danie Główne
 description:Opis2
 imgname:plus.png
 price:30
+id:3
+name:Picie
+description:Opis2
+imgname:plus.png
+price:30
