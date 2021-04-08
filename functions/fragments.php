@@ -67,6 +67,7 @@ function post($userName, $description)
                     <p>Name: ' . $userName . '</p>
                     <p>Description: ' . $description . '</p>
                 <script>
+                //TODO: Giving Like is only working for first post, need to be repaired!
                 let like=false;
                 function counter()
                 {
