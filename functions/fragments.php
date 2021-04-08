@@ -64,8 +64,9 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
                     <img src="img/'.$imgname.'">
                     <div class="icons">
                     <div style="float: left;">
-                        <img src="img/pizza.png" onclick="counter()">
-                        <span id="counter">'.$likes.'</span>
+                        <img src="img/pizza.png" onclick="counter('.$id.')">
+                        <span id="counter'.$id.'">'.$likes.'</span>
+                        <span id="bool '.$id.'" style="visibility: hidden">0</span>
                         </div>
                         <div style="float: right;">
                         <img src="img/more.png">
@@ -77,25 +78,6 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
                     <hr style="background: #d91e36; height: 1px;">
                     <p>Name: ' . $username . '</p>
                     <p>Description: ' . $description . '</p>
-                <script>
-                //TODO: Giving Like is only working for first post, need to be repaired!
-                let like=false;
-                function counter()
-                {
-                    if(like==false)
-                    {
-                        document.getElementById("counter").innerHTML++;
-                        like=!like;
-                        console.log("Odejmuje");
-                    }
-                    else if(like==true)
-                    {
-                        document.getElementById("counter").innerHTML--;
-                        like=!like;
-                        console.log("Dodaje");
-                    }
-                };
-</script>
 </div>';
 }
 

@@ -22,7 +22,7 @@ HeaderDiv();
         foreach ($lines as $line)
         {
             $var = explode(':', $line, 2);
-            $arr[$var[0]] = $var[1];
+            $arr[$i] = $var[1];
             $i++;
             if($i==6)
             {
@@ -31,13 +31,11 @@ HeaderDiv();
                 $j++;
             }
         }
+        foreach($posts as $post)
+        {
+            post($post[0],$post[1],$post[2],$post[3],$post[4],$post[5]);
+        }
 
-        print_r($posts[1]);
-
-
-        post("Damian", "Ale smaczne! Polecam gorąco!");
-        post("Damian", "Ale smaczne! Polecam gorąco!");
-        post("Damian", "Ale smaczne! Polecam gorąco!");
         ?>
     </div>
 </div>
@@ -45,6 +43,31 @@ HeaderDiv();
 hastagsDiv();
 ?>
 </div>
+<script>
+    function counter(n)
+    {
+        console.log("funkcja");
+        console.log(n);
+        let string="bool "+n;
+        console.log(string);
+        if(document.getElementById(string).value=="0"){
+            console.log("dupa");
+        }
+        console.log(bool);
+        if(bool==0)
+        {
+            //document.getElementById("counter"+n).innerHTML++;
+            //document.getElementById("bool"+n).innerHTML=1;
+            console.log("Odejmuje");
+        }
+        else if(bool==1)
+        {
+            //document.getElementById("counter"+n).innerHTML--;
+            //document.getElementById("bool"+n).innerHTML=0;
+            console.log("Dodaje");
+        }
+    };
+</script>
 </body>
 </html>
 
