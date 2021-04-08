@@ -1,6 +1,7 @@
 <?php
 /**
  * @param string $name Argument to show how HTML <title> should look like
+ * skdaosdkpasokdpasos
  */
 function headHTML($name = "")
 {
