@@ -1,0 +1,36 @@
+id:1
+name:Little pancake with nutella
+description:smaller version of our classic pancake
+imgname:pizza.png
+price:20
+odpismod:Allergens: gluten
+id:2
+name:Waffle with nuts and maple sauce
+description: 2 pieces of waffle bathed in sweet maple sauce
+imgname:plus.png
+price:30
+opismod:Allergens: gluten, nuts
+id:3
+name:Pancake with nutella
+description: Sweet pancake
+imgname:plus.png
+price:30
+opismod:Allergens: gluten, chocolate
+id:4
+name:Pancake with fruits
+description: Sweet pancake
+imgname:plus.png
+price:30
+opismod:Allergens: gluten,
+id:5
+name:Coffe
+description:
+imgname:pizza.png
+price:30
+opismod:
+id:6
+name:Tea
+description:
+imgname:pizza.png
+price:30
+opismod:

@@ -34,7 +34,7 @@ function HeaderDiv()
         <a><img src="img/plus.png"></a>
         <a href="basket.php"><img src="img/basket.png"></a>
         <a><img src="img/invite.png"></a>
-        <a><img src="img/account.png"></a>
+        <a href="account.php"><img src="img/account.png"></a>
         <a><img src="img/more.png"></a>
     </div>
     <script>
