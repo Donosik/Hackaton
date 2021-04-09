@@ -20,7 +20,25 @@ HeaderDiv();
         <?php
         if (isset($_SESSION['order']))
         {
-            print_r($_SESSION['order']);
+            for ($i = 0; $i < $_SESSION['order']; $i++)
+            {
+                if (isset($_SESSION['order' . $i]))
+                {
+                    ?>
+                    <form action="basket.php">
+                        <input type="hidden" name="order" value="<?php $i?>">
+                        <input type="submit" value="delete">
+                    </form>
+                    <?php
+                    print_r($_SESSION['order' . $i]);
+                    echo '<br/><br/>';
+
+                }
+            }
+        }
+        else
+        {
+            echo 'Nic tu nie ma';
         }
         ?>
     </div>

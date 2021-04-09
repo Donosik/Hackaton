@@ -1,5 +1,20 @@
 <?php
 session_start();
+if (isset($_POST['Restaurant']))
+{
+    $order = array($_POST['Restaurant'],
+        $_POST['name'], $_POST['price']);
+    if (isset($_SESSION['order']))
+    {
+        $_SESSION['order']++;
+        $_SESSION['order' . $_SESSION['order']] = $order;
+    }
+    else
+    {
+        $_SESSION['order']=0;
+        $_SESSION['order' . $_SESSION['order']] = $order;
+    }
+}
 require_once("functions/fragments.php");
 ?>
 <!DOCTYPE html>
@@ -27,29 +42,29 @@ HeaderDiv();
     <div class="wallOutside">
         <div class="wall">
             <div class="inside">
-                            <h1>Przystawki</h1>
-                            <hr style="height: 5px; background: #3E3C3D; width: 750px">
-                        <?php
-                        $myFile = "menu/menu" . $restaurant . ".txt";
-                        $lines = file($myFile);
+                <h1>Przystawki</h1>
+                <hr style="height: 5px; background: #3E3C3D; width: 750px">
+                <?php
+                $myFile = "menu/menu" . $restaurant . ".txt";
+                $lines = file($myFile);
+                $i = 0;
+                $j = 0;
+                foreach ($lines as $line)
+                {
+                    $var = explode(':', $line, 2);
+                    $arr[$i] = $var[1];
+                    $i++;
+                    if ($i == 6)
+                    {
                         $i = 0;
-                        $j = 0;
-                        foreach ($lines as $line)
-                        {
-                            $var = explode(':', $line, 2);
-                            $arr[$i] = $var[1];
-                            $i++;
-                            if ($i == 6)
-                            {
-                                $i = 0;
-                                $menus[$j] = $arr;
-                                $j++;
-                            }
-                        }
-                        foreach ($menus as $menu)
-                        {
-                            cardre($menu[0], $menu[1], $menu[3], $menu[4]);
-                            echo '
+                        $menus[$j] = $arr;
+                        $j++;
+                    }
+                }
+                foreach ($menus as $menu)
+                {
+                    cardre($menu[0], $menu[1], $menu[3], $menu[4]);
+                    echo '
                             <div class="modal">
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
@@ -57,34 +72,41 @@ HeaderDiv();
                                     <h1>' . $menu[1] . '</h1>
                                     <h3>' . $menu[2] . '</h3>
                                     <p>' . $menu[5] . '</p>
-
-                                    <img src="img/plus.png" width="40 px" height="40 px" style="float: right">
+                                    <form action="restaurantPage.php?restaurant=' . $restaurant . '" method="post">
+                                    <input type="hidden" 
+                                     name="Restaurant" value="' . $restaurant . '">
+                                    <input type="hidden" 
+                                     name="name" value="' . $menu[1] . '">
+                                                                         <input type="hidden" 
+                                     name="price" value="' . $menu[4] . '">
+                                    <input type="image" src="img/plus.png" width="40px" height="40px" style="float: right" value="Submit">
+                                    </form>
                                 </div>
                             </div>
                             
                             
                             ';
-                        } ?>
-                            <script>
-                                var modal = document.getElementsByClassName("modal");
-                                var btn = document.getElementsByClassName("cardre");
-                                var span = document.getElementsByClassName("close");
+                } ?>
+                <script>
+                    var modal = document.getElementsByClassName("modal");
+                    var btn = document.getElementsByClassName("cardre");
+                    var span = document.getElementsByClassName("close");
 
-                                for (let i = 0; i < btn.length; i++) {
-                                    btn[i].onclick = function () {
-                                        modal[i].style.display = "block";
-                                    }
-                                    span[i].onclick = function () {
-                                        modal[i].style.display = "none";
-                                    }
-                                    // Works only for last modal
-                                    window.onclick = function (event) {
-                                        if (event.target == modal[i]) {
-                                            modal[i].style.display = "none";
-                                        }
-                                    }
-                                }
-                            </script>
+                    for (let i = 0; i < btn.length; i++) {
+                        btn[i].onclick = function () {
+                            modal[i].style.display = "block";
+                        }
+                        span[i].onclick = function () {
+                            modal[i].style.display = "none";
+                        }
+                        // Works only for last modal
+                        window.onclick = function (event) {
+                            if (event.target == modal[i]) {
+                                modal[i].style.display = "none";
+                            }
+                        }
+                    }
+                </script>
             </div>
         </div>
     </div>
