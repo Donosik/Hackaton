@@ -3,6 +3,7 @@ name:Przystawka
 description:Opis
 imgname:pizza.png
 price:20
+odpismod:Alergeny
 id:2
 name:Danie Główne
 description:Opis2

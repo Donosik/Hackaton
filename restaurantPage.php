@@ -45,7 +45,7 @@ HeaderDiv();
                             $var = explode(':', $line, 2);
                             $arr[$i] = $var[1];
                             $i++;
-                            if ($i == 5)
+                            if ($i == 6)
                             {
                                 $i = 0;
                                 $menus[$j] = $arr;
@@ -56,18 +56,20 @@ HeaderDiv();
                         foreach ($menus as $menu)
                         {
                             cardre($menu[0], $menu[1], $menu[2], $menu[3]);
-                        } ?>
-                            <div id="myModal" class="modal">
+                            echo'
+                            <div id="MyModal'. $menu[0] .'" class="modal">
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
-                                    <h1>Przystawka</h1>
-                                    <h3>Podstawowe składniki</h3>
-                                    <p>Opis</p>
+
+                                    <h1>'. $menu[1] .'</h1>
+                                    <h3>'. $menu[2] .'</h3>
+                                    <p>'. $menu[5] .'</p>
+
                                     <img src="img/plus.png" width="40 px" height="40 px" style="float: right">
                                 </div>
                             </div>
                             <script>
-                                var modal = document.getElementById("myModal");
+                                var modal = document.getElementById("MyModal'. $menu[0] .'");
                                 var span = document.getElementsByClassName("close")[0];
 
                                 function show() {
@@ -82,6 +84,9 @@ HeaderDiv();
                                     }
                                 }
                             </script>
+                            ';
+                        } ?>
+
                             <?php
                         }
                         break;
