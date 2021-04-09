@@ -1,7 +1,7 @@
 .basket_content {
 
     margin-left: 10px;
-    margin-right: 10px;  
+    margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 8px;
@@ -16,12 +16,21 @@
 
 .basket_style p {
     margin: 0px;
-    
+
 }
-.basket_style a
-{
+
+.basket_style a {
     text-decoration: none;
     color: black;
     margin: 0px;
     padding: 0px;
+}
+
+.basket_order {
+    float: left;
+    text-align: right;
+}
+.basket_order a
+{
+    font-size: 19px;
 }
