@@ -34,7 +34,7 @@ function HeaderDiv()
         <a><img src="img/plus.png"></a>
         <a href="basket.php"><img src="img/basket.png"></a>
         <a><img src="img/invite.png"></a>
-        <a><img src="img/account.png"></a>
+        <a href="account.php"><img src="img/account.png"></a>
         <a><img src="img/more.png"></a>
     </div>
     <script>
@@ -67,7 +67,7 @@ function card($id, $name, $description, $img, $hashtags)
 </div>';
 }
 
-function post($id, $likes, $imgname, $username, $description, $restaurantid)
+function post($id, $likes, $imgname, $username, $description, $restaurantid,$restaurantname)
 {
     echo '<div class="post">
                     <img src="pic/' . $imgname . '">
@@ -78,7 +78,7 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
                         </div>
                         <div style="float: right;">
                         <img src="img/comment.png">
-                        <a href="restaurantPage.php?restaurant=' . $restaurantid .'" style = "margin:0px; padding:0px"><img src="img/home.png"></a>
+                        <a href="restaurantPage.php?restaurant=' . $restaurantid .'&name='.$restaurantname.'" style = "margin:0px; padding:0px"><img src="img/home.png"></a>
                         <img src="img/share.png">
                         </div>
                     </div>
