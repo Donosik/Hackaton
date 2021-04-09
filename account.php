@@ -16,7 +16,21 @@ HeaderDiv();
         <?php
         if (isset($_SESSION['account']))
         {
-
+            echo 'Jesteś zalogowany!';
+        }
+        else if(isset($_POST['status']))
+        {
+            if($_POST['status']=="register")
+            {
+                $_SESSION['account']="login";
+                //create new file;
+                echo 'create';
+            }
+            else
+            {
+                //check if login and password is correct
+                $_SESSION['account']=$_POST['status'];
+            }
         }
         else
         {
@@ -26,32 +40,35 @@ HeaderDiv();
                 <input type="submit" value="register" name="login" id="0">
             </form>
             <?php
-            if (isset($_SESSION['login']))
-            { ?>
-                <form action="account.php" method="post">
-                    <label>Login</label>
-                    <label>Username</label>
-                    <input type="text" name="username">
-                    <label>Password</label>
-                    <input type="password" name="username">
-                    <input type="hidden" name="status" value="login">
-                    <input type="submit" value="Submit">
-                </form>
-                <?php
-            }
-            else
+            if (isset($_GET['login']))
             {
-                ?>
-                <form action="account.php" method="post">
-                    <label>Register</label><br/><br/>
-                    <label>Username</label>
-                    <input type="text" name="username"><br/><br/>
-                    <label>Password</label>
-                    <input type="password" name="username">
-                    <input type="hidden" name="status" value="register">
-                    <input type="submit" value="Submit">
-                </form>
-                <?php
+                if ($_GET['login']=="login")
+                { ?>
+                    <form action="account.php" method="post">
+                        <label>Login</label><br/><br/>
+                        <label>Username</label>
+                        <input type="text" name="username"><br/><br/>
+                        <label>Password</label>
+                        <input type="password" name="username">
+                        <input type="hidden" name="status" value="login">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <?php
+                }
+                else
+                {
+                    ?>
+                    <form action="account.php" method="post">
+                        <label>Register</label><br/><br/>
+                        <label>Username</label>
+                        <input type="text" name="username"><br/><br/>
+                        <label>Password</label>
+                        <input type="password" name="username">
+                        <input type="hidden" name="status" value="register">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <?php
+                }
             }
         }
         ?>

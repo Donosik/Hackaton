@@ -20,7 +20,7 @@ HeaderDiv();
         <?php
         if (isset($_SESSION['order']))
         {
-            for ($i = 0; $i < $_SESSION['order']; $i++)
+            for ($i = 0; $i <= $_SESSION['order']; $i++)
             {
                 if (isset($_SESSION['order' . $i]))
                 {
