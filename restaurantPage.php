@@ -73,7 +73,8 @@ HeaderDiv();
                                     <h1>' . $menu[1] . '</h1>
                                     <h3>' . $menu[2] . '</h3>
                                     <p>' . $menu[5] . '</p>
-                                    <form action="restaurantPage.php?restaurant=' . $restaurant . '" method="post">
+                                    <form action="restaurantPage.php?restaurant=' . $restaurant . '&name='.$_GET['name']
+                        .'" method="post">
                                     <input type="hidden" 
                                      name="Restaurant" value="' . $restaurant . '">
                                     <input type="hidden" 

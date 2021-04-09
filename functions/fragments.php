@@ -57,7 +57,7 @@ function HeaderDiv()
 function card($id, $name, $description, $img, $hashtags)
 {
     echo '<div class="card">
-    <a href="restaurantPage.php?restaurant=' . $id . '&&name='.$name.'"><img src="img/' . $img . '" width="100 px" height="100 px">
+    <a href="restaurantPage.php?restaurant=' . $id . '&name='.$name.'"><img src="img/' . $img . '" width="100 px" height="100 px">
     <p id="restaurantName">';
     echo $name;
     echo '</p>
@@ -90,7 +90,7 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
 
 function basket_order($price, $restaurantid, $name)
 {
-    echo '<div class="basket_content"">' . $name . '<p style="color: #686466; font-size: 16px">'. $price .'$</p><input type="submit" value="delete"></p>
+    echo '<div class="basket_content">' . $name . '<p style="color: #686466; font-size: 16px">'. $price .'$</p><input type="submit" value="delete"></p>
     </div>';
 }
 
