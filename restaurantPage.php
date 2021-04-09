@@ -42,8 +42,9 @@ HeaderDiv();
     <div class="wallOutside">
         <div class="wall">
             <div class="inside">
-                <h1>Menu</h1>
+                <h1><?php echo $_GET['name'];?></h1>
                 <hr style="height: 5px; background: #3E3C3D; width: 750px">
+                <h2>Starters:</h2>
                 <?php
                 $myFile = "menu/menu" . $restaurant . ".txt";
                 $lines = file($myFile);
@@ -82,10 +83,14 @@ HeaderDiv();
                                     <input type="image" src="img/plus.png" width="40px" height="40px" style="float: right" value="Submit">
                                     </form>
                                 </div>
-                            </div>
-                            
-                            
+                            </div>        
                             ';
+                    if ($menu[0]==2){
+                     echo'<h2>Main Course</h2>';
+                    }
+                    if ($menu[0]==4){
+                        echo'<h2>Drinks</h2>';
+                    }
                 } ?>
                 <script>
                     var modal = document.getElementsByClassName("modal");
