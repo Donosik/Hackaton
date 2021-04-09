@@ -77,7 +77,7 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
                         <span class="counter">' . $likes . '</span>
                         </div>
                         <div style="float: right;">
-                        <img src="img/more.png">
+                        <img src="img/comment.png">
                         <a href="restaurantPage.php?restaurant=' . $restaurantid .'" style = "margin:0px; padding:0px"><img src="img/home.png"></a>
                         <img src="img/share.png">
                         </div>
