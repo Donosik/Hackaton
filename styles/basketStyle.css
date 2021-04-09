@@ -14,6 +14,7 @@
     color: white;
     text-align: center;
     align-items: center;
+    font-family: 'Comfortaa', cursive;
 }
 
 .basket_style p {
@@ -29,11 +30,27 @@
     text-align: center;
 }
 
+.basket_query {
+    float: left;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.basket_query input{
+    float: left;
+    text-align: center;
+    min-width: 400px; 
+    border-radius: 20px;
+    margin-top: 2px; 
+    font-family: 'Comfortaa', cursive;
+}
+
 .basket_order {
     float: left;
     text-align: right;
+    border-radius: 20px;
 }
 .basket_order a
 {
-    font-size: 19px;
+    font-size: 20px;
 }
