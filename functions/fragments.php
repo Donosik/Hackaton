@@ -90,7 +90,7 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid,$res
 
 function basket_order($price, $restaurantid, $name)
 {
-    echo '<div class="basket_content">' . $name . '<p style="color: #686466; font-size: 16px">'. $price .'$</p><form action="basket.php"><input type="image" src="img/delete.png" value="delete"></form></p>
+    echo '<div class="basket_content">' . $name . '<p style="font-size: 16px">'. $price .'$</p><form action="basket.php"><input type="image" style="width:40px; height:40px" src="img/delete.png" value="delete"></form></p>
     </div>';
 }
 
