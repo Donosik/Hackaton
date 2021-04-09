@@ -1,8 +1,8 @@
 id:1
 likes:12
 imgname:burgerek.png
-username:Damian Burgerburg
-description:Today I ate this perfect burger, made with love in the Burgerland restaurant. Best burger I've ever had - solid 10/10!
+username:Damian Burgerer
+description:Today I ate this perfect burger, made with love in the Burgerburg restaurant. Best burger I've ever had - solid 10/10!
 restaurantid:3
 id:2
 likes:3
