@@ -43,7 +43,6 @@ HeaderDiv();
                 echo '</div>';
                 ?>
                 <div style="width: 600px;margin: auto; clear: both;">
-                    <hr style="height: 2px;background-color: black;">
                     <form action="ordered.php" method="post">
                         <div class="basket_order">
                             <a>First name:</a><br/>
@@ -63,7 +62,8 @@ HeaderDiv();
                             <input type="tel" name="phone" placeholder="Phone"><br/>
                             <input type="text" name="time" placeholder="When do you want to get your food?"><br/>
                         </div>
-                        <input type="image" src="img/delete.png" value="submit" width="40px" height="40px">
+                        <input type="image" src="img/share.png" value="submit" width="40px" height="40px"
+                               style="margin-top: 20px;">
                     </form>
                 </div>
                 <?php
