@@ -39,7 +39,16 @@ function HeaderDiv()
     </div>
     <script>
     function show(){
-    document.getElementById("inputField").style.visibility="visible";
+    var obj = document.getElementById("inputField");
+    if (obj.style.visibility=="visible")
+    {
+        obj.style.visibility="hidden";
+    }
+    else
+    {
+        obj.style.visibility="visible";
+    }
+    
     }
     </script>
 </div>';
@@ -81,7 +90,7 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
 </div>';
 }
 
-function cardre($i, $name, $description, $img)
+function cardre($i, $name, $img, $price)
 {
     echo '<div class="cardre"">
     
@@ -91,7 +100,7 @@ function cardre($i, $name, $description, $img)
     echo $name;
     echo '</p>
     <p>';
-    echo $description;
+    echo '<p style="color: #686466; font-size: 16px">'. $price .'$</p>'; 
     echo '</p></a>
 </div>';
 }
