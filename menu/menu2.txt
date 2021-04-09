@@ -25,12 +25,12 @@ opismod: Origin: US
 id:5
 name:Coca-Cola
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:
 id:6
 name:Water
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:

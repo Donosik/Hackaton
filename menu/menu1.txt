@@ -25,12 +25,12 @@ opismod: optional sauce
 id:5
 name:Tea
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:
 id:6
 name:Soda
 description:Lemon or Orage taste
-imgname:
+imgname:pizza.png
 price:30
 opismod:
