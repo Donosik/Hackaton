@@ -44,7 +44,7 @@ HeaderDiv();
                 ?>
                 <div style="width: 600px;margin: auto; clear: both;">
                     <hr style="height: 2px;background-color: black;">
-                    <form method="post">
+                    <form action="ordered.php" method="post">
                         <div class="basket_order">
                             <a>First name:</a><br/>
                             <a>Second name:</a><br/>
@@ -56,19 +56,14 @@ HeaderDiv();
                         </div>
                         <div class ="basket_query" style="float: left">
                             <input type="text" name="firstName" placeholder="First name"><br/>
-
                             <input type="text" name="secondName" placeholder="Second name"><br/>
-
-                            <input type="text" name="e-mail" placeholder="E-mail"><br/>
-
+                            <input type="email" name="e-mail" placeholder="E-mail"><br/>
                             <input type="text" name="city" placeholder="City"><br/>
-
-                            <input type="text" name="address" placeholder="Your address:"><br/>
-
-                            <input type="text" name="phone" placeholder="Phone"><br/>
-
+                            <input type="text" name="address" placeholder="Your address"><br/>
+                            <input type="tel" name="phone" placeholder="Phone"><br/>
                             <input type="text" name="time" placeholder="When do you want to get your food?"><br/>
                         </div>
+                        <input type="image" src="img/delete.png" value="submit" width="40px" height="40px">
                     </form>
                 </div>
                 <?php

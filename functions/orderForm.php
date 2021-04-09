@@ -5,7 +5,7 @@ if(isset($_GET['restaurant']))
     echo "Actually you are ordering from restaurant $x";
 }
 ?>
-<form action="ordered.php" method="post">
+<form action="../ordered.php" method="post">
     <label for="firstName">First name:</label><br />
     <input type="text" id="firstName" name="firstName"><br />
     <label for="secondName">Second Name:</label><br />
