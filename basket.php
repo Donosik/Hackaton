@@ -38,7 +38,7 @@ HeaderDiv();
         }
         else
         {
-            echo 'Nic tu nie ma';
+            echo 'There is nothing in here';
         }
         ?>
     </div>
