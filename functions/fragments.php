@@ -34,7 +34,7 @@ function HeaderDiv()
         <a><img src="img/plus.png"></a>
         <a href="basket.php"><img src="img/basket.png"></a>
         <a><img src="img/invite.png"></a>
-        <a href="account.php"><img src="img/account.png"></a>
+        <a><img src="img/account.png"></a>
         <a><img src="img/more.png"></a>
     </div>
     <script>
@@ -90,17 +90,8 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
 
 function basket_order($price, $restaurantid, $name)
 {
-    echo '<div class="cardre"">
-    
-    <a class="dishName"><img src="img/' . $img . '" width="100 px" height="100 px">
-    <p>
-    <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">';
-    echo $name;
-    echo '</p>
-    <p>';
-    echo '<p style="color: #686466; font-size: 16px">'. $price .'$</p>'; 
-    echo '</p></a>
-</div>';
+    echo '<div class="basket_content"">' . $name . '<p style="color: #686466; font-size: 16px">'. $price .'$</p><input type="submit" value="delete"></p>
+    </div>';
 }
 
 function cardre($i, $name, $img, $price)

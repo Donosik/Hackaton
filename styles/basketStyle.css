@@ -1,0 +1,22 @@
+.basket_content {
+    border: black;
+    border-style: solid;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.basket_style p {
+    margin: 5px;
+}
+.basket_style a
+{
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
