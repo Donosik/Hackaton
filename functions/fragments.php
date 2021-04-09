@@ -85,8 +85,8 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
                         </div>
                     </div>
                     <hr style="background: #d91e36; height: 1px;">
-                    <p>Name: ' . $username . '</p>
-                    <p>Description: ' . $description . '</p>
+                    <p style="color: #686466; font-size: 14px">Posted by: ' . $username . '</p>
+                    <p>' . $description . '</p>
 </div>';
 }
 
