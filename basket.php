@@ -7,7 +7,7 @@ require_once("functions/fragments.php");
 <?php
 headHTML("Basket");
 ?>
-<link href="styles/postStyle.css" rel="stylesheet" type="text/css">
+<link href="styles/basketStyle.css" rel="stylesheet" type="text/css">
 <body>
 <?php
 HeaderDiv();
@@ -17,31 +17,31 @@ HeaderDiv();
         <h1>Basket</h1>
         <hr style="background-color: #d91e36; height: 2px;"/>
         <h2>Your order:</h2>
-        <?php
-        if (isset($_SESSION['order']))
-        {
-            for ($i = 0; $i <= $_SESSION['order']; $i++)
+        <div style="width: 400px;margin: auto;">
+            <?php
+            if (isset($_SESSION['order']))
             {
-                if (isset($_SESSION['order' . $i]))
+                for ($i = 0; $i <= $_SESSION['order']; $i++)
                 {
-                    ?>
-                    <form action="basket.php">
-                        <input type="hidden" name="order" value="<?php $i?>">
-                    </form>
-                    <?php
-                    
-                    basket_order($_SESSION['order' . $i][2], $_SESSION['order' . $i][0], $_SESSION['order' . $i][1])
-                    
-                    ;
+                    if (isset($_SESSION['order' . $i]))
+                    {
+                        ?>
+                        <form action="basket.php">
+                            <input type="hidden" name="order" value="<?php $i ?>">
+                        </form>
+                        <?php
 
+                        basket_order($_SESSION['order' . $i][2], $_SESSION['order' . $i][0], $_SESSION['order' . $i][1]);
+
+                    }
                 }
             }
-        }
-        else
-        {
-            echo 'There is nothing in here';
-        }
-        ?>
+            else
+            {
+                echo 'There is nothing in here';
+            }
+            ?>
+        </div>
     </div>
 </div>
 <?php
