@@ -17,7 +17,7 @@ HeaderDiv();
         <h1>Basket</h1>
         <hr style="background-color: #d91e36; height: 2px;"/>
         <h2>Your order:</h2>
-        <div style="width: 600px;margin: auto; background-color:white;">
+        <div style="width: 600px;margin: auto; background-color:white; text-align: center; align-items: center;">
             <?php
             if(isset($_POST['item']))
             {
