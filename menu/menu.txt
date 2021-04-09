@@ -1,0 +1,36 @@
+id:1
+name:Fries
+description:with sald
+imgname:pizza.png
+price:20
+odpismod:Allergens: none
+id:2
+name:Onion Rings
+description:
+imgname:plus.png
+price:30
+opismod:Allergens: gluten
+id:3
+name:Classic Burger
+description: Beef, tomato, majo sauce, salad
+imgname:plus.png
+price:30
+opismod:Allergens: gluten, tomato, egg
+id:4
+name:Cheese Burger
+description: Beef, tomato, majo sauce, salad, ketchup, cheese
+imgname:plus.png
+price:30
+opismod:Allergens: gluten, tomato, egg, cheese
+id:5
+name:Coca-Cola
+description:
+imgname:
+price:30
+opismod:
+id:6
+name:Sprite
+description:
+imgname:
+price:30
+opismod:
