@@ -20,6 +20,12 @@ HeaderDiv();
         }
         else
         {
+            ?>
+            <form action="account.php" method="get">
+                <input type="submit" value="login" name="login" id="1">
+                <input type="submit" value="register" name="login" id="0">
+            </form>
+            <?php
             if (isset($_SESSION['login']))
             { ?>
                 <form action="account.php" method="post">
@@ -31,7 +37,7 @@ HeaderDiv();
                     <input type="hidden" name="status" value="login">
                     <input type="submit" value="Submit">
                 </form>
-            <?php
+                <?php
             }
             else
             {
