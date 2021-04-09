@@ -86,10 +86,10 @@ HeaderDiv();
                             </div>        
                             ';
                     if ($menu[0]==2){
-                     echo'<h2>Main Course</h2>';
+                     echo'<h2>Main Course:</h2>';
                     }
                     if ($menu[0]==4){
-                        echo'<h2>Drinks</h2>';
+                        echo'<h2>Drinks:</h2>';
                     }
                 } ?>
                 <script>
