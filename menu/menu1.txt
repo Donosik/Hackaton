@@ -1,18 +1,36 @@
 id:1
-name:Przystawka
-description:Opis
+name:Chips
+description:Classic French Fries
 imgname:pizza.png
 price:20
-odpismod:Alergeny
+odpismod:with ketchup
 id:2
-name:Danie Główne
-description:Opis2
+name:Onion rings
+description:Fried onion rings
 imgname:plus.png
 price:30
-opismod:
+opismod: with garlic sauce
 id:3
-name:Picie
-description:Opis2
+name:Fish and Chips
+description:Cod with French Fries
 imgname:plus.png
+price:30
+opismod: optional sauce
+id:4
+name:Fish and Chips 2
+description:Carp with French Fries
+imgname:plus.png
+price:30
+opismod: optional sauce
+id:5
+name:Tea
+description:
+imgname:pizza.png
+price:30
+opismod:
+id:6
+name:Soda
+description:Lemon or Orage taste
+imgname:pizza.png
 price:30
 opismod:
