@@ -25,12 +25,12 @@ opismod:Allergens: gluten, tomato, egg, cheese
 id:5
 name:Coca-Cola
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:
 id:6
 name:Sprite
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:

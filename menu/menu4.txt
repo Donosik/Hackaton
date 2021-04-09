@@ -25,12 +25,12 @@ opismod:Allergens: gluten,
 id:5
 name:Coffe
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:
 id:6
 name:Tea
 description:
-imgname:
+imgname:pizza.png
 price:30
 opismod:
