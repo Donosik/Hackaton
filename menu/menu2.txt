@@ -1,0 +1,36 @@
+id:1
+name:Samosa
+description:Meat or peas in a kind of dumpings
+imgname:pizza.png
+price:20
+odpismod:Origin: India
+id:2
+name:Tacos
+description: Meat, beans, pepper, corn, totato sauce in tortilla
+imgname:plus.png
+price:30
+opismod:Origin: Spain
+id:3
+name:Pizza Pepperoni
+description: Pizza with mozzarella and pepperoni
+imgname:plus.png
+price:30
+opismod: Origin: Italy
+id:4
+name:Burger
+description: Classic burger with cheese
+imgname:plus.png
+price:30
+opismod: Origin: US
+id:5
+name:Coca-Cola
+description:
+imgname:
+price:30
+opismod:
+id:6
+name:Water
+description:
+imgname:
+price:30
+opismod:
