@@ -9,8 +9,10 @@ name:Danie Główne
 description:Opis2
 imgname:plus.png
 price:30
+odpismod:Alergeny
 id:3
 name:Picie
 description:Opis2
 imgname:plus.png
+odpismod:Alergeny
 price:30

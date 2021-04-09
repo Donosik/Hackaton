@@ -52,45 +52,45 @@ HeaderDiv();
                                 $j++;
                             }
                         }
-
                         foreach ($menus as $menu)
                         {
                             cardre($menu[0], $menu[1], $menu[2], $menu[3]);
-                            echo'
-                            <div id="MyModal" class="modal">
+                            echo '
+                            <div class="modal">
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
 
-                                    <h1>'. $menu[1] .'</h1>
-                                    <h3>'. $menu[2] .'</h3>
-                                    <p>'. $menu[5] .'</p>
+                                    <h1>' . $menu[1] . '</h1>
+                                    <h3>' . $menu[2] . '</h3>
+                                    <p>' . $menu[5] . '</p>
 
                                     <img src="img/plus.png" width="40 px" height="40 px" style="float: right">
                                 </div>
                             </div>
                             
+                            
+                            ';
+                        } ?>
                             <script>
-                                var modal = document.getElementById("MyModal");
-                                var btn = document.getElementById("dishName");
-                                var span = document.getElementsByClassName("close")[0];
-                                
-                                btn.onclick = function() {
-                                    modal.style.display = "block";
-                                }
-                                
-                                span.onclick = function () {
-                                    modal.style.display = "none";
-                                }
-                                
-                                window.onclick = function (event) {
-                                    if (event.target == modal) {
-                                        modal.style.display = "none";
+                                var modal = document.getElementsByClassName("modal");
+                                var btn = document.getElementsByClassName("cardre");
+                                var span = document.getElementsByClassName("close");
+
+                                for (let i = 0; i < btn.length; i++) {
+                                    btn[i].onclick = function () {
+                                        modal[i].style.display = "block";
+                                    }
+                                    span[i].onclick = function () {
+                                        modal[i].style.display = "none";
+                                    }
+                                    // Works only for last modal
+                                    window.onclick = function (event) {
+                                        if (event.target == modal[i]) {
+                                            modal[i].style.display = "none";
+                                        }
                                     }
                                 }
                             </script>
-                            ';
-                        } ?>
-
                             <?php
                         }
                         break;
