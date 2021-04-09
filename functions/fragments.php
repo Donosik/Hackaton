@@ -73,9 +73,8 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
                     <img src="pic/' . $imgname . '">
                     <div class="icons">
                     <div style="float: left;">
-                        <img src="img/pizza.png" onclick="counter(' . $id . ')">
-                        <span id="counter' . $id . '">' . $likes . '</span>
-                        <span id="bool ' . $id . '" style="visibility: hidden">0</span>
+                        <img class="like" src="img/pizza.png">
+                        <span class="counter">' . $likes . '</span>
                         </div>
                         <div style="float: right;">
                         <img src="img/more.png">

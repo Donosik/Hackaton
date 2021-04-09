@@ -27,12 +27,6 @@ HeaderDiv();
     <div class="wallOutside">
         <div class="wall">
             <div class="inside">
-                <?php
-                switch ($restaurant)
-                {
-                    case 1:
-                        {
-                            ?>
                             <h1>Przystawki</h1>
                             <hr style="height: 5px; background: #3E3C3D; width: 750px">
                         <?php
@@ -91,35 +85,6 @@ HeaderDiv();
                                     }
                                 }
                             </script>
-                            <?php
-                        }
-                        break;
-                    case 2:
-                        {
-                            echo "2 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 3:
-                        {
-                            echo "3 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 4:
-                        {
-                            echo "4 Strona restauracji $restaurant";
-                        }
-                        break;
-                    case 5:
-                        {
-                            echo "5 Strona restauracji $restaurant";
-                        }
-                        break;
-                    default:
-                    {
-                        echo "Error! Nie wybrałeś żadnej restauracji!";
-                    }
-                }
-                ?>
             </div>
         </div>
     </div>

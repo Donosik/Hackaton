@@ -44,29 +44,16 @@ hastagsDiv();
 ?>
 </div>
 <script>
-    function counter(n)
+    var counter=document.getElementsByClassName("counter");
+    var like=document.getElementsByClassName("like");
+
+    for(let i=0;i<like.length;i++)
     {
-        console.log("funkcja");
-        console.log(n);
-        let string="bool "+n;
-        console.log(string);
-        if(document.getElementById(string).value=="0"){
-            console.log("dupa");
-        }
-        console.log(bool);
-        if(bool==0)
+        like[i].onclick=function()
         {
-            //document.getElementById("counter"+n).innerHTML++;
-            //document.getElementById("bool"+n).innerHTML=1;
-            console.log("Odejmuje");
+            counter[i].innerHTML++;
         }
-        else if(bool==1)
-        {
-            //document.getElementById("counter"+n).innerHTML--;
-            //document.getElementById("bool"+n).innerHTML=0;
-            console.log("Dodaje");
-        }
-    };
+    }
 </script>
 </body>
 </html>
