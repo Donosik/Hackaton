@@ -42,7 +42,7 @@ HeaderDiv();
     <div class="wallOutside">
         <div class="wall">
             <div class="inside">
-                <h1>Przystawki</h1>
+                <h1>Menu</h1>
                 <hr style="height: 5px; background: #3E3C3D; width: 750px">
                 <?php
                 $myFile = "menu/menu" . $restaurant . ".txt";

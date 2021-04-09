@@ -88,6 +88,21 @@ function post($id, $likes, $imgname, $username, $description, $restaurantid)
 </div>';
 }
 
+function basket_order($price, $restaurantid, $name)
+{
+    echo '<div class="cardre"">
+    
+    <a class="dishName"><img src="img/' . $img . '" width="100 px" height="100 px">
+    <p>
+    <img src="img/plus2.png" width="40 px" height="40 px" style="float: right">';
+    echo $name;
+    echo '</p>
+    <p>';
+    echo '<p style="color: #686466; font-size: 16px">'. $price .'$</p>'; 
+    echo '</p></a>
+</div>';
+}
+
 function cardre($i, $name, $img, $price)
 {
     echo '<div class="cardre"">
