@@ -19,6 +19,10 @@ HeaderDiv();
         <h2>Your order:</h2>
         <div style="width: 600px;margin: auto; background-color:white;">
             <?php
+            if(isset($_POST['item']))
+            {
+                $_SESSION['order'.$_POST['item']]=null;
+            }
             if (isset($_SESSION['order']))
             {
                 for ($i = 0; $i <= $_SESSION['order']; $i++)
@@ -31,7 +35,8 @@ HeaderDiv();
                         </form>
                         <?php
 
-                        basket_order($_SESSION['order' . $i][2], $_SESSION['order' . $i][0], $_SESSION['order' . $i][1]);
+                        basket_order($_SESSION['order' . $i][2], $_SESSION['order' . $i][0], $_SESSION['order' .
+                        $i][1],$i);
 
                     }
                 }
