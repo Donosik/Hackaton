@@ -57,7 +57,7 @@ HeaderDiv();
                         {
                             cardre($menu[0], $menu[1], $menu[2], $menu[3]);
                             echo'
-                            <div id="MyModal'. $menu[0] .'" class="modal">
+                            <div id="MyModal" class="modal">
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
 
@@ -68,16 +68,20 @@ HeaderDiv();
                                     <img src="img/plus.png" width="40 px" height="40 px" style="float: right">
                                 </div>
                             </div>
+                            
                             <script>
-                                var modal = document.getElementById("MyModal'. $menu[0] .'");
+                                var modal = document.getElementById("MyModal");
+                                var btn = document.getElementById("dishName");
                                 var span = document.getElementsByClassName("close")[0];
-
-                                function show() {
+                                
+                                btn.onclick = function() {
                                     modal.style.display = "block";
-                                };
+                                }
+                                
                                 span.onclick = function () {
                                     modal.style.display = "none";
                                 }
+                                
                                 window.onclick = function (event) {
                                     if (event.target == modal) {
                                         modal.style.display = "none";
