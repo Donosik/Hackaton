@@ -1,16 +1,14 @@
-# Hack Kosice Marathon: Your project name
-
-*A template for projects submitted to HK Marathon 2021. You can [fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) and use it as a starting point.*
+# Hack Kosice Marathon: Foodbook
 
 ## Team
 
-*Your name here!*
+POLSLdreamteam
 
 ### Team members
 
-- Teammate 1, School
-- Teammate 2, School
-- Teammate 3, School
+- Damian Wieczorek, Silesian University of Technology
+- Wojciech Owczarek, Silesian University of Technology
+- Agnieszka Roj, Silesian University of Technology
 
 ## Description
 
