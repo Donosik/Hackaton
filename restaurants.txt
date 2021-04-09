@@ -1,20 +1,20 @@
 id:1
-name:Łosoś
-description:dasdas
+name:Fish and Chips Pub
+description:Just a good old pub with good old meals!
 imgname:pizza.png
-hashtags:#sushi;#fish;#chinese
+hashtags:#wine&beer;#fish;#hamburgers;#discount;#casual;#cash;#meat
 id:2
-name:Ryba
-description:opis
+name:Round the Globe
+description:Best cusine from all around the globe
 imgname:pizza.png
-hashtags:#sushi
+hashtags:#sushi;#fish;#pizza;#italian;#soup;#fancy;#mexican;#polish;#top10;#chinese
 id:3
-name:Damian
-description:Opis
+name:Burgerburg
+description:Best burgers in town, you won't regret the purchase!
 imgname:pizza.png
-hashtags:#sushi;#fish
+hashtags:#hamburgers;#meat;#vegetarian;#wine&beer;#top10;#cash
 id:4
-name:Damian
-description:daddadadad
+name:Panrest
+description:Delicious pancakes home-made with love!
 imgname:pizza.png
-hashtags:#sushi;#fish
+hashtags:#pancakes;#casual;#coffe;#cash;#cosy

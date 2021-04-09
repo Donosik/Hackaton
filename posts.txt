@@ -10,3 +10,9 @@ imgname:placuszki.png
 username:Alice Pancake
 description:If you know me then you know that I REALLY like pancakes. Today I ordered the honey pancakes at Panrest and although they looked great I was a bit disappointed with their taste... 6.5/10
 restaurantid:4
+id:3
+likes:7
+imgname:round.png
+username:Mr. Foodlover
+description:Like seriously, why is nobody talking about the Round the Globe? They are AMAZING - just look at this food! The best part is that they managed to grab recipies from every corner of the earth, so no mater your taste you will surely find something for yourself
+restaurantid:4
